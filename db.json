@@ -1,0 +1,660 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server 1",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "json-server 2",
+      "userId": 2
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Javascript news",
+      "subtitle": "Что нового в JS за 2023 год?",
+      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "views": 1022,
+      "createdAt": "26.10.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": 4,
+          "type": "code",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": 5,
+          "type": "text",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": 2,
+          "type": "image",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": 3,
+          "type": "code",
+          "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+        },
+        {
+          "id": 7,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": 8,
+          "type": "image",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": 9,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "React news",
+      "subtitle": "Что нового в React за 2022 год?",
+      "img": "https://habrastorage.org/getpro/habr/upload_files/d4f/a46/db5/d4fa46db5c8dd0bdf0457900653dc1c7.jpeg",
+      "views": 1743,
+      "createdAt": "03.06.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Redux Toolkit news",
+      "subtitle": "Обновления в Redux Toolkit",
+      "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1626366102185/9lUF4ajJG.png",
+      "views": 1245,
+      "createdAt": "01.11.2021",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Angular news",
+      "subtitle": "Что нового в Angular за 2022 год?",
+      "img": "https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2020/06/angular.png?fit=1024%2C538&ssl=1",
+      "views": 380,
+      "createdAt": "26.12.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "title": "Vue news",
+      "subtitle": "Что нового в Vue за 2023 год?",
+      "img": "https://segwitz.com/wp-content/uploads/2021/06/vuejs-development-malaysia.jpeg",
+      "views": 505,
+      "createdAt": "015.10.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "title": "Node JS news",
+      "subtitle": "Обновления в Node JS",
+      "img": "https://dan-it.com.ua/wp-content/uploads/2018/09/nodejs-ar21.png",
+      "views": 1245,
+      "createdAt": "01.02.2021",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "title": "Styled Components news",
+      "subtitle": "Что нового в Styled Components за 2020 год?",
+      "img": "https://www.styled-components.com/atom.png",
+      "views": 1606,
+      "createdAt": "25.10.2020",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "title": "ESLint news",
+      "subtitle": "Что нового в ESLint",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--dWcPMxnR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hk083ugohb8gcuv8xt8t.png",
+      "views": 670,
+      "createdAt": "03.05.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "title": "Prettier news",
+      "subtitle": "Обновления в Prettier",
+      "img": "https://lh3.googleusercontent.com/sfHO5MKevLesNw1grlh21j0hgtH5IaMmASI5aVv_-gYyF7dvA96FlS7mdagWM6NDPxfEY2JwkArooEZZPOzXmu01-g=w640-h400-e365-rj-sc0x00ffffff",
+      "views": 344,
+      "createdAt": "01.08.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "title": "Vite news",
+      "subtitle": "Что нового в Vite за 2023 год?",
+      "img": "https://cdn.cleancommit.io/blog/2023/02/Vite-logo.jpg",
+      "views": 1105,
+      "createdAt": "22.06.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "title": "Typescript news",
+      "subtitle": "Что нового в Typescript за 2021 год?",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+      "views": 2267,
+      "createdAt": "15.12.2021",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "title": "Webpack news",
+      "subtitle": "Обновления в Webpack",
+      "img": "https://media.trytn.dev/library/sites/2/2020/06/webpack.jpg",
+      "views": 2798,
+      "createdAt": "01.09.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "title": "Sass news",
+      "subtitle": "Что нового в Sass",
+      "img": "https://webdesign-master.ru/img/thumbs/@2x/tools/sass/sass.jpg",
+      "views": 1022,
+      "createdAt": "12.04.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "title": "Бум в экономике",
+      "subtitle": "Что случилось в 2022 году?",
+      "img": "https://www.interfax.ru/ftproot/textphotos/2018/12/28/ec700.jpg",
+      "views": 1402,
+      "createdAt": "10.03.2022",
+      "type": [
+        "economics"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "userId": 2,
+      "title": "Биология (новости)",
+      "subtitle": "Открытия за 2021 год",
+      "img": "https://filearchive.cnews.ru/img/book/2022/05/13/735-7352020_thumb-image-biology-images-png-transparent-.png",
+      "views": 1245,
+      "createdAt": "30.10.2021",
+      "type": [
+        "science"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "title": "Geography (news)",
+      "subtitle": "Что нового в мире?",
+      "img": "https://s9.travelask.ru/system/images/files/001/220/317/wysiwyg_jpg/27_04_16_2.jpg?1541599177",
+      "views": 783,
+      "createdAt": "26.07.2023",
+      "type": [
+        "science"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "userId": 1,
+      "title": "Python news",
+      "subtitle": "Что нового в React за 2021 год?",
+      "img": "https://www.hocktraining.com/home/getpicturethumbnail/830",
+      "views": 782,
+      "createdAt": "24.07.2021",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "userId": 1,
+      "title": "Java news",
+      "subtitle": "Обновления в Java",
+      "img": "https://s0.rbk.ru/v6_top_pics/media/img/1/60/756533742439601.jpg",
+      "views": 2456,
+      "createdAt": "19.04.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "userId": 1,
+      "title": "Swift news",
+      "subtitle": "Что нового в Swift за 2023 год?",
+      "img": "https://developer.apple.com/swift/images/swift-og.png",
+      "views": 1309,
+      "createdAt": "30.11.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "userId": 1,
+      "title": "C# news",
+      "subtitle": "Что нового в C# за 2022 год?",
+      "img": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/7e/d2/86/7ed286dd-96ca-b0e2-d1b0-21c09146154b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+      "views": 892,
+      "createdAt": "31.08.2022",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "userId": 1,
+      "title": "Docker news",
+      "subtitle": "Обновления в Docker",
+      "img": "https://serverspace.by/wp-content/uploads/2020/06/43_do-1.png",
+      "views": 1305,
+      "createdAt": "24.06.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "userId": 1,
+      "title": "Kotlin news",
+      "subtitle": "Что нового в Kotlin за 2022 год?",
+      "img": "https://habrastorage.org/getpro/habr/upload_files/c34/4c5/9f8/c344c59f81efa338f5dd4324a8411696.jpeg",
+      "views": 792,
+      "createdAt": "26.10.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "userId": 1,
+      "title": "Svelte news",
+      "subtitle": "Что нового в Svelte за 2021 год?",
+      "img": "https://codemonk.in/blog/content/images/2022/03/Svelte-Feature-Image.png",
+      "views": 456,
+      "createdAt": "09.09.2021",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "userId": 1,
+      "title": "Jest news",
+      "subtitle": "Обновления в Jest",
+      "img": "https://jestjs.io/ru/img/opengraph.png",
+      "views": 1876,
+      "createdAt": "23.02.2023",
+      "type": [
+        "it"
+      ],
+      "blocks": [
+        {
+          "id": 1,
+          "type": "text",
+          "title": "Заголовок",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, recusandae accusantium molestias quaerat at inventore, repellendus modi nulla voluptatum illo unde sequi tenetur, odit repudiandae vero. Vitae nulla quos non cupiditate ratione commodi architecto autem perspiciatis maxime dolorem et rerum, ullam, cumque blanditiis! Beatae, possimus dolorem reprehenderit nobis hic commodi totam consectetur corporis numquam magnam accusantium in porro recusandae repellendus illo esse dolore laborum maiores natus ea reiciendis ab! Nostrum adipisci quasi nisi itaque ab voluptatum doloremque. Maiores in dolorem veniam fugiat saepe aliquid tenetur, beatae error impedit, explicabo officiis accusantium. Eveniet velit, veritatis voluptates porro expedita molestias ipsam?"
+          ]
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Some comment",
+      "articleId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "text": "Some comment 2",
+      "articleId": 1,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "text": "Some comment 3",
+      "articleId": 1,
+      "userId": 1
+    },
+    {
+      "text": "new comment",
+      "articleId": 6,
+      "userId": 2,
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "avatar": "https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676296367166243426.png",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "123",
+      "avatar": "https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676296225180472502.png",
+      "role": "user"
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "firstname": "Ivan",
+      "lastname": "Ivanov",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676296367166243426.png"
+    },
+    {
+      "id": 2,
+      "firstname": "Petr",
+      "lastname": "Petrov",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Saint Petersburg",
+      "username": "user",
+      "avatar": "https://cs14.pikabu.ru/post_img/big/2023/02/13/8/1676296225180472502.png"
+    }
+  ]
+}
